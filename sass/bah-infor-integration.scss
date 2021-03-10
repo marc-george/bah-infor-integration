@@ -1,0 +1,158 @@
+//Settings
+@import "px-colors-design/_settings.colors.scss";
+
+// Generic
+@import "px-normalize-design/_generic.normalize.scss";
+
+// Base
+$inuit-webfont-path: "/bower_components/px-typography-design/type";
+@import "px-typography-design/_base.typography.scss";
+@import "px-headings-design/_base.headings.scss";
+@import "px-flexbox-design/_base.flexbox.scss";
+
+$inuit-enable-input--regular: true;
+$inuit-enable-input--huge: true;
+@import "px-forms-design/_base.forms.scss";
+
+// Meta
+
+// Objects
+@import "px-actionable-text-icons-design/_objects.actionable.scss";
+@import "px-flexbox-design/_base.flexbox.scss";
+
+$inuit-enable-layout--center: true;
+$inuit-enable-layout__item--center: true;
+$inuit-enable-layout--right: true;
+$inuit-enable-layout--tiny: true;
+$inuit-enable-layout--middle: true;
+@import "px-layout-design/_objects.layout.scss";
+
+// Component
+$inuit-enable-btn--bare: true;
+$inuit-enable-btn--icon: true;
+$inuit-enable-btn--primary: true;
+$inuit-enable-btn--disabled: true;
+$inuit-enable-btn--tertiary: true;
+@import "px-buttons-design/_objects.buttons.scss";
+
+[class^="col-"] {
+  padding-left: 0.33333rem !important;
+  padding-right: 0.33333rem !important;
+}
+
+.disabled-dropdown {
+  pointer-events: none;
+}
+
+.background--white {
+  background-color: $white;
+}
+
+.block-stack {
+  display: block;
+  height: auto;
+}
+
+.caps {
+  text-transform: uppercase !important;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.icon--blue {
+  color: $blue;
+}
+
+.icon--green {
+  color: $green;
+}
+
+.icon--red {
+  color: $red;
+}
+
+.header-info {
+  color: #1b2a33;
+  font-family: "GE Inspira Sans";
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 18px;
+  background: $white;
+  white-space: nowrap;
+}
+
+.line {
+  border-bottom: 1px dashed #1b2a33;
+  height: 10px;
+  width: 100%;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.required-field {
+  height: 15px;
+  width: 99px;
+  color: #e53838;
+  font-family: "GE Inspira Sans";
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.text--grey {
+  color: $grey3;
+}
+
+.text--darkgrey {
+  color: $grey5;
+}
+
+.text--red {
+  color: $red;
+}
+
+.text--size-1em {
+  font-size: 1em;
+}
+
+.btn--box {
+  width: 20%;
+  text-align: right;
+}
+
+.width--full {
+  width: 100%;
+  display: inline-block;
+}
+
+#wrapperDiv {
+  background-color: $white;
+}
+
+// Trumps
+$inuit-enable-layout--flush: true;
+$inuit-enable-margins: true;
+$inuit-enable-margins--tiny: true;
+$inuit-enable-margins--small: true;
+$inuit-enable-margins--large: true;
+$inuit-enable-margins--huge: true;
+$inuit-enable-margins--negative: true;
+$inuit-enable-margins--negative-tiny: true;
+$inuit-enable-margins--negative-small: true;
+$inuit-enable-margins--negative-large: true;
+$inuit-enable-margins--negative-huge: true;
+$inuit-enable-margins--none: true;
+$inuit-enable-margins--rtl: true;
+$inuit-enable-paddings: true;
+$inuit-enable-paddings--tiny: true;
+$inuit-enable-paddings--small: true;
+$inuit-enable-paddings--large: true;
+$inuit-enable-paddings--huge: true;
+$inuit-enable-paddings--none: true;
+$inuit-enable-paddings--rtl: true;
+@import "px-spacing-design/_trumps.spacing.scss";
+@import "inuit-clearfix/_trumps.clearfix.scss";
+@import "px-widths-design/_trumps.widths.scss";

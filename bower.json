@@ -1,0 +1,54 @@
+{
+  "name": "bah-infor-integration",
+  "description": "Seed project for creating webcomponent with Polymer",
+  "main": "bah-infor-integration.html",
+  "dependencies": {
+    "bah-loading-message":
+      "https://712884f4d7f228dea7ac7bd116faa296932a7f1c:x-oauth-basic@github.build.ge.com/HealthcareBrilliantFactoryPredixTeam/bah-loading-message.git#^1.0.1",
+    "bah-utility":
+      "https://712884f4d7f228dea7ac7bd116faa296932a7f1c:x-oauth-basic@github.build.ge.com/HealthcareBrilliantFactoryPredixTeam/bah-utility.git#^1.0.1",
+    "common-imports": "https://712884f4d7f228dea7ac7bd116faa296932a7f1c:x-oauth-basic@github.build.ge.com/DET-Software/common-imports.git#^0.0.6",
+    "inuit-clearfix": "^0.2.2",
+    "polymer": "Polymer/polymer#^1.6.1",
+    "px-actionable-text-icons-design": "^1.1.8",
+    "px-button-group-design": "https://github.com/PredixDev/px-input-group-design.git#v0.2.20",
+    "px-buttons-design": "^0.4.37",
+    "px-colors-design": "0.2.16",
+    "px-dropdown": "^3.0.0",
+    "px-flexbox-design": "^0.5.2",
+    "px-forms-design": "0.3.17",
+    "px-headings-design": "0.2.14",
+    "px-helpers-design": "0.3.20",
+    "px-layout-design": "0.3.13",
+    "px-normalize-design": "^0.4.4",
+    "px-polymer-font-awesome": "^1.1.0",
+    "px-spacing-design": "^0.4.0",
+    "px-typography-design": "0.3.5",
+    "px-view-header": "^0.2.0",
+    "px-widths-design": "0.3.9",
+    "source-alert-service":
+      "https://712884f4d7f228dea7ac7bd116faa296932a7f1c:x-oauth-basic@github.build.ge.com/HealthcareBrilliantFactoryPredixTeam/source-alert-service.git#^1.1.0"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.0.0",
+    "web-component-tester": "^4.0.0",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
+  },
+  "resolutions": {
+    "px-helpers-design": "0.3.20",
+    "px-colors-design": "0.3.9",
+    "px-dropdown": "^3.1.0",
+    "px-buttons-design": "^1.1.2",
+    "px-forms-design": "^1.1.0",
+    "px-headings-design": "^0.3.1",
+    "px-layout-design": "^0.4.0",
+    "px-typography-design": "^1.2.0",
+    "px-widths-design": "^0.3.21",
+    "lodash": "^4.17.4",
+    "px-defaults-design": "^1.0.2",
+    "px-mixins-design": "^0.3.0",
+    "px-widths-tools-design": "^0.3.0",
+    "px-functions-design": "^1.0.0"
+  }
+}

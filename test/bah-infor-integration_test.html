@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>bah-infor-integration test</title>
+
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+    <script src="../../web-component-tester/browser.js"></script>
+
+    <link rel="import" href="../bah-infor-integration.html">
+  </head>
+  <body>
+    <test-fixture id="basic">
+      <template>
+        <bah-infor-integration></bah-infor-integration>
+      </template>
+    </test-fixture>
+
+    <script>
+      describe('bah-infor-integration', function() {
+        // global variables
+        var selectedSite = {
+          'userSiteSubscriptionId': 290,
+          'siteName': 'Alagaesia',
+          'siteDescription': 'Kaleb\'s Test Plant based on the Inheritance Cycle books',
+          'siteId': 'e88a6523-06a3-477d-8d75-9bcc6617491f',
+          'enterprise': 'GE_Healthcare',
+          'id': 'e88a6523-06a3-477d-8d75-9bcc6617491f',
+          'name': 'Alagaesia',
+          'description': 'Kaleb\'s Test Plant based on the Inheritance Cycle books',
+          'isOpenable': true,
+          'type': 'site'
+        }
+
+        beforeEach(function() {
+          element = fixture('basic');
+        });
+
+        describe('instantiating', function () {
+          it('should instantiate without errors', function() {
+            assert.equal(element.is, 'bah-infor-integration');
+          });
+        });
+
+        describe('loading works correctly', function () {
+          it('should not set data loaded without mapped locations', function() {
+            element.unmappedLocations = null;
+            element.unmappedAlertDefinitions = [];
+            assert.isTrue(element.isLoading);
+          });
+          it('should not set data loaded without mapped alert defs', function() {
+            element.unmappedLocations = [];
+            element.unmappedAlertDefinitions = null;
+            assert.isTrue(element.isLoading);
+          });
+
+        });
+
+        describe('_doMapping works correctly', function() {
+          beforeEach(function() {
+            // Make a fake XMLHttpRequest object
+            xhr = sinon.useFakeXMLHttpRequest();
+            requests = [];
+
+            xhr.onCreate = function (xhr) {
+              requests.push(xhr);
+            };
+          });
+
+          // Cleanup after testing
+          afterEach(function () {
+            xhr.restore();
+          });
+
+          it('should fail to get source mappings for an empty site', function(done) {
+            //create needed elements
+            var promise = element._doMapping();
+            assert.strictEqual(promise, undefined);
+            done();
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

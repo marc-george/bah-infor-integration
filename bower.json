@@ -4,10 +4,10 @@
   "main": "bah-infor-integration.html",
   "dependencies": {
     "bah-loading-message":
-      "https://712884f4d7f228dea7ac7bd116faa296932a7f1c:x-oauth-basic@github.build.ge.com/HealthcareBrilliantFactoryPredixTeam/bah-loading-message.git#^1.0.1",
+      "https://github.com/marc-george/bah-loading-message-1.0.1.git#main",
     "bah-utility":
-      "https://712884f4d7f228dea7ac7bd116faa296932a7f1c:x-oauth-basic@github.build.ge.com/HealthcareBrilliantFactoryPredixTeam/bah-utility.git#^1.0.1",
-    "common-imports": "https://712884f4d7f228dea7ac7bd116faa296932a7f1c:x-oauth-basic@github.build.ge.com/DET-Software/common-imports.git#^0.0.6",
+      "https://github.com/marc-george/bah-utility-1.0.1.git#main",
+    "common-imports": "https://github.com/marc-george/common-imports.git#main",
     "inuit-clearfix": "^0.2.2",
     "polymer": "Polymer/polymer#^1.6.1",
     "px-actionable-text-icons-design": "^1.1.8",
@@ -27,7 +27,7 @@
     "px-view-header": "^0.2.0",
     "px-widths-design": "0.3.9",
     "source-alert-service":
-      "https://712884f4d7f228dea7ac7bd116faa296932a7f1c:x-oauth-basic@github.build.ge.com/HealthcareBrilliantFactoryPredixTeam/source-alert-service.git#^1.1.0"
+      "https://github.com/marc-george/source-alert-service-1.1.0.git#main"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
